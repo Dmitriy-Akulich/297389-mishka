@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Акулич](https://up.htmlacademy.ru/adaptive/12/user/297389).
-* Наставник: [Дмитрий Безуглый] (https://github.com/shalfey41) .
+* Наставник: [Дмитрий Безуглый](https://github.com/shalfey41) .
 
 ---
 
