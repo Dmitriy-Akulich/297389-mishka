@@ -68,9 +68,9 @@
         </article>
       </section>
       <section class="production">
-        <article class="production__list">
+        <article class="production__article">
           <h1 class="production__title">Процесс производства</h1>
-          <video src="#" class="production__video" poster="http://placehold.it/260x150">
+          <video class="production__video" poster="http://placehold.it/260x150">
             <source src="video/#.ogv" type="video/ogg">
           </video>
           <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -94,9 +94,9 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-           <b class="copyright__text">Разработано:</b>
-           <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-       </div>
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
     <div class="modal-form">
@@ -104,12 +104,18 @@
       <p class="modal-form__text">Выберете размер</p>
       <form action="https://echo.htmlacademy.ru">
         <div class="modal-form__list">
-          <label for="modal-form-s"></label>
-          <input class="modal-form__item modal-form__item--s" type="radio" name="modal-form" id="modal-form-s">
-          <label for="modal-form-m"></label>
-          <input class="modal-form__item modal-form__item--m" type="radio" name="modal-form" id="modal-form-m">
-          <label for="modal-form-l"></label>
-          <input class="modal-form__item modal-form__item--l" type="radio" name="modal-form" id="modal-form-l">
+          <label>
+            <span class="modal-form__name-button">s</span>
+            <input class="modal-form__item" type="radio" name="modal-form" value="s">
+          </label>
+          <label>
+            <span class="modal-form__name-button">m</span>
+            <input class="modal-form__item" type="radio" name="modal-form" value="m">
+          </label>
+          <label>
+            <span class="modal-form__name-button">l</span>
+            <input class="modal-form__item" type="radio" name="modal-form" value="l">
+          </label>
         </div>
         <button class="modal-form__button button" type="submit">Добавить</button>
       </form>
