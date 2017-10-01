@@ -1,0 +1,59 @@
+@import "normalize.less";
+
+@background-color: #f1f1f1;
+
+.font(@size, @color: #444444, @weight: normal, @line-height: @size + 5){
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-size: @size;
+  color: @color;
+  font-weight: @weight;
+  line-height: @line-height;
+}
+
+body{
+  width: 100%;
+  .font(15px);
+}
+
+.container{
+  min-width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.button{
+  .font(17px, #444444, bold, 20px);
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  background: #ffffff;
+}
+
+// index
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/page-main.less";
+@import "blocks/promo.less";
+@import "blocks/product.less";
+@import "blocks/about.less";
+@import "blocks/reviews.less";
+@import "blocks/contacts.less";
+@import "blocks/page-footer.less";
+@import "blocks/social.less";
+@import "blocks/copyright.less";
+@import "blocks/button.less";
+@import "blocks/modal-form.less";
+
+// catalog
+@import "blocks/page-catalog.less";
+@import "blocks/goods.less";
+@import "blocks/production.less";
+
+// form
+@import "blocks/page-form.less";
+@import "blocks/form.less";
+@import "blocks/form-type.less";
+@import "blocks/form-color.less";
+@import "blocks/form-user.less";
+@import "blocks/form-tel.less";
+@import "blocks/form-mail.less";
+@import "blocks/form-addition.less";
