@@ -1,32 +1,7 @@
 @import "normalize.less";
-
-@background-color: #f1f1f1;
-
-.font(@size, @color: #444444, @weight: normal, @line-height: @size + 5){
-  font-family: 'Open Sans', 'Roboto', sans-serif;
-  font-size: @size;
-  color: @color;
-  font-weight: @weight;
-  line-height: @line-height;
-}
-
-body{
-  width: 100%;
-  .font(15px);
-}
-
-.container{
-  min-width: 260px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.button{
-  .font(17px, #444444, bold, 20px);
-  text-transform: uppercase;
-  border: 2px solid #444444;
-  background: #ffffff;
-}
+@import "variables.less";
+@import "mixins.less";
+@import "scaffolding.less";
 
 // index
 @import "blocks/page-header.less";
