@@ -1,15 +1,35 @@
-.contacts{
-  padding-top: 1px;
-}
-
 .contacts__title{
+  width: 320px;
+  margin: 40px auto;
+  padding: 0 30px;
   .font(18px, @text-color-black, bold, 30px);
 }
 
 .contacts__list{
   display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 0 50px 0;
   border-collapse: collapse;
   .font(15px, @text-color-brown, normal, 30px);
+}
+
+.contacts__table-row{
+  width: 100%;
+}
+
+.contacts__cell-first{
+  width: 75px;
+  height: 50px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.contacts__cell-second{
+  width: 75px;
+  height: 50px;
+  padding-right: 10px;
+  vertical-align: top;
 }
 
 .contacts__mail{
@@ -17,16 +37,89 @@
 }
 
 .contacts__map{
-  min-height: 455px;
-  background: #dfdfdf url(../img/map-mobile@1x.jpg) no-repeat;
-  background-size: cover;
+  height: 457px;
+  background: #dfdfdf url(../img/map-mobile@1x.jpg) no-repeat center / cover;
 }
 
 .contacts__button{
-  display: block;
-  margin-top: 35px;
+  width: 260px;
+  margin: 40px auto;
   vertical-align: middle;
   text-align: center;
   line-height: 52px;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width){
+
+  .contacts__title{
+    width: 768px;
+    margin: 140px auto 40px;
+    padding: 0 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__list{
+    width: 668px;
+    font-size: 17px;
+      tbody{
+        display: flex;
+      }
+  }
+
+  .contacts__cell-second{
+    width: 260px;
+  }
+
+  .contacts__mail{
+    font-size: inherit;
+  }
+
+  .contacts__button{
+    width: 230px;
+    margin: 55px auto;
+  }
+}
+
+@media (min-width: @desktop-width){
+
+  .contacts{
+    width: 1150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 225px;
+    padding-right: 50px;
+  }
+
+  .contacts__title{
+    width: 350px;
+    padding: 0;
+    margin-left: 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__list{
+    width: 350px;
+    margin: 0;
+      tbody{
+        display: table;
+    }
+  }
+
+  .contacts__map{
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    width: 525px;
+    height: 458px;
+  }
+
+  .contacts__button{
+    width: 230px;
+    margin: 55px 0;
+  }
 }
