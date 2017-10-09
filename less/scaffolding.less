@@ -1,11 +1,42 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
 body{
   min-width: 320px;
   .font(15px);
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
-.container{
-  width: 260px;
-  margin: 0 auto;
-  padding: 0 30px;
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+// .container{
+//   width: 320px;
+//   margin: 0 auto;
+//   padding: 0 30px;
+// }
+//
+// @media (min-width: @tablet-width){
+//
+//   .container{
+//     width: 768px;
+//     padding: 0 50px;
+//   }
+// }
+//
+// @media (min-width: @desktop-width){
+//
+//   .container{
+//     width: 1150px;
+//     padding: 0 50px;
+//   }
+// }

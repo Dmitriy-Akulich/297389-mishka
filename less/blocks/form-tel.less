@@ -1,4 +1,25 @@
-.form-tel input[type="tel"]{
+.form-tel{
+  margin-bottom: 0;
+}
+
+.form-tel__input{
+  width: 100%;
+  padding: 15px 0;
   .font(17px, @text-color-brown, normal, 18px);
   text-transform: uppercase;
+  border: none;
+  border-bottom: 2px solid @text-color-brown;
+  outline: none;
+}
+
+@media (min-width: @tablet-width){
+
+  .form-tel{
+    padding: 20px 0;
+    background-color: #f1f1f1;
+  }
+
+  .form-tel__input{
+    background-color: #f1f1f1;
+  }
 }
