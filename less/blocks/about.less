@@ -1,78 +1,93 @@
-.about__title{
-  width: 260px;
-  margin: 30px auto 0;
+.about {
+  padding-top: 1px;
+  padding-bottom: 10px;
+}
+
+.about__title {
+  margin-top: 33px;
+  margin-bottom: 0;
   .font-title-section;
 }
 
-.about__list{
-  width: 260px;
-  margin: 0 auto;
+.about__list {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.about__item{
-  margin-top: 85px;
+.about__item {
+  padding-top: 84px;
   .font(17px, @text-color-black, bold, 20px);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
-
-@media (min-width: @tablet-width){
-
-  .about{
-    padding-top: 50px;
+@media (min-width: @tablet-width) {
+  .about {
+    padding-top: 34px;
   }
 
-  .about__title{
-    width: 668px;
-    margin: 0 auto;
+  .about__title {
     font-size: 43px;
     line-height: 50px;
   }
 
-  .about__list{
-    width: 668px;
+  .about__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
   }
 
-  .about__item{
-    width:334px;
+  .about__item {
+    width: 50%;
     padding-right: 20px;
+    padding-top: 108px;
     font-size: 20px;
     line-height: 22px;
   }
 
-  .about__item--flower{
+  .about__item--flower {
     order: 1;
   }
-  .about__item--hand{
+
+  .about__item--hand {
     order: 2;
   }
-  .about__item--price{
+
+  .about__item--price {
     order: 3;
   }
-  .about__item--manufacturer{
+
+  .about__item--manufacturer {
     order: 4;
   }
-  .about__item--like{
+
+  .about__item--like {
     order: 5;
   }
-  .about__item--present{
+
+  .about__item--present {
     order: 6;
   }
 }
+@media (min-width: @desktop-width) {
+  .about {
+    padding-top: 27px;
+  }
 
-@media (min-width: @desktop-width){
-
-  .about__title{
-    width: 1150px;
-    padding: 0 225px;
+  .about__title {
+    padding: 0 175px;
+    margin-bottom: -6px;
     font-size: 53px;
     line-height: 57px;
   }
 
-  .about__list{
-    width: 1150px;
-    padding: 0 225px;
+  .about__list {
+    padding: 0 175px;
+  }
+
+  .about__item {
+    padding-top: 110px;
   }
 }

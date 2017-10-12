@@ -1,197 +1,205 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list menu-main">
-          <li class="menu-main__item menu-main__item--logo-width">
-            <div class="menu-main__item-wrapper menu-main__logo-wrapper">
-              <a class="menu-main__logo-link">
-                <img class="menu-main__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
-              </a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--catalog">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--catalog" href="catalog.html">Каталог товаров</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--knitting">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--knitting" href="form.html">Вязание на заказ</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--search">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--search" href="#">Поиск по сайту</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--basket">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--basket" href="#">Корзина: <span>пока пуста</span></a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--delivery">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--delivery" href="#">Бесплатная доставка по России</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--supply">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--supply" href="#">Новые поступления</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--saley">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--sale" href="#">Распродажа</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <section class="promo">
-        <div class="promo__title-wrapper">
-          <h2 class="promo__title">Милые штучки ручной работы для дома</h2>
-        </div>
-        <ul class="promo__list">
-          <li class="promo__item promo__item--home">
-            <a class="promo__link promo__link--home" href="#">Предметы  интерьера</a>
-          </li>
-          <li class="promo__item promo__item--toys">
-            <a class="promo__link promo__link--toys" href="#">Детские  игрушки</a>
-          </li>
-        </ul>
-      </section>
-      <section class="product">
-        <div class="product__wrapper">
-          <div class="product__title-wrapper">
-            <h2 class="product__title">Вязаные корзинки</h2>
-            <b class="product__stock">Товар недели</b>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav container">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list menu-main">
+        <li class="menu-main__item menu-main__item--logo-width">
+          <div class="menu-main__item-wrapper menu-main__logo-wrapper">
+            <a class="menu-main__logo-link">
+              <img class="menu-main__logo-image" src="img/logo-mobile.svg" width="90" height="40" alt="Мишка">
+            </a>
           </div>
-          <div class="product__description-wrapper">
-            <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="product__list">
-              <tr class="product__item">
-                <td class="product__parameter">Цвет:</td>
-                <td class="product__value">«Тиффани»/серый</td>
-              </tr>
-              <tr class="product__item">
-                <td class="product__parameter">Диаметр:</td>
-                <td class="product__value">25 см</td>
-              </tr>
-              <tr class="product__item">
-                <td class="product__parameter">Высота:</td>
-                <td class="product__value">15 см</td>
-              </tr>
-            </table>
-            <div class="product__image-wrapper">
-              <img class="product__image" src="/img/triple-set-mobile@1x.jpg" width="260" height="315" alt="товар недели">
-            </div>
-            <p class="product__price">Цена:
-              <span>990 руб.</span>
-            </p>
-            <button class="product__button button" type="button">Заказать</button>
+        </li>
+        <li class="menu-main__item menu-main__item--catalog">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--catalog" href="catalog.html">Каталог товаров</a>
           </div>
-        </div>
-      </section>
-      <section class="about">
-        <h2 class="about__title">Коротко о нас</h2>
-        <ul class="about__list">
-          <li class="about__item about__item--flower">Экологически  чистые материалы</li>
-          <li class="about__item about__item--price">Скандинавский стиль  по российской цене</li>
-          <li class="about__item about__item--like">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--hand">Связано вручную с  любовью и умилением</li>
-          <li class="about__item about__item--manufacturer">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--present">Поставляется в  подарочной упаковке</li>
-        </ul>
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper">
-          <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__list  slider">
-            <blockquote class="reviews__item  slider__item">
-              <p class="slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="slider__author-name">Анастасия Красильникова</cite>
-              <a class="slider__author-contact" href="#">@misssssiskras</a>
-            </blockquote>
+        </li>
+        <li class="menu-main__item menu-main__item--knitting">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--knitting" href="form.html">Вязание на заказ</a>
           </div>
-          <div class="slider-controls">
-            <button class="slider-controls__item slider-controls__item--prev" type="button">Предыдущий отзыв</button>
-            <button class="slider-controls__item slider-controls__item--next" type="button">Следующий отзыв</button>
+        </li>
+        <li class="menu-main__item menu-main__item--search">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--search" href="#">Поиск по сайту</a>
           </div>
-          <a href="#" class="reviews__button button">Написать</a>
+        </li>
+        <li class="menu-main__item menu-main__item--basket">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--basket" href="#">Корзина: <span>пока пуста</span></a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--delivery">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--delivery" href="#">Бесплатная доставка по России</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--supply">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--supply" href="#">Новые поступления</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--saley">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--sale" href="#">Распродажа</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="promo">
+      <div class="promo__title-wrapper container">
+        <h2 class="promo__title">Милые штучки<br /> ручной<br /> работы для дома</h2>
+      </div>
+      <ul class="promo__list container">
+        <li class="promo__item promo__item--home">
+          <a class="promo__link promo__link--home" href="#">Предметы <br /> интерьера</a>
+        </li>
+        <li class="promo__item promo__item--toys">
+          <a class="promo__link promo__link--toys" href="#">Детские <br /> игрушки</a>
+        </li>
+      </ul>
+    </section>
+    <section class="product">
+      <div class="product__wrapper container">
+        <div class="product__title-wrapper">
+          <h2 class="product__title">Вязаные корзинки</h2>
+          <b class="product__stock">Товар недели</b>
         </div>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__list">
-          <tr class="contacts__table-row">
-            <td class="contacts__cell-first">e-mail:</td>
-            <td class="contacts__cell-second">
-              <a class="contacts__mail" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </td>
-          </tr>
-          <tr class="contacts__table-row">
-            <td class="contacts__cell-first">адрес:</td>
-            <td class="contacts__cell-second">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
-        <div class="contacts__map"></div>
-        <a class="contacts__button button" href="#">Напишите нам</a>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo-link">
-          <img class="page-footer__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="product__description-wrapper">
+          <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="product__list">
+            <tr class="product__item">
+              <td class="product__parameter">Цвет:</td>
+              <td class="product__value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="product__item">
+              <td class="product__parameter">Диаметр:</td>
+              <td class="product__value">25 см</td>
+            </tr>
+            <tr class="product__item">
+              <td class="product__parameter">Высота:</td>
+              <td class="product__value">15 см</td>
+            </tr>
+          </table>
+          <div class="product__image-wrapper">
+            <img class="product__image" src="/img/triple-set-mobile@1x.jpg" width="260" height="315" alt="товар недели">
+          </div>
+          <p class="product__price">Цена:
+            <span>990 руб.</span>
+          </p>
+          <button class="product__button button" type="button">Заказать</button>
         </div>
       </div>
-    </footer>
-    <div class="modal-form">
-      <b class="modal-form__title">Добавить в корзину</b>
-      <p class="modal-form__text">Выберете размер</p>
-      <form action="https://echo.htmlacademy.ru">
-        <div class="modal-form__list">
-          <label>
-            <span class="modal-form__name-button">s</span>
-            <input class="modal-form__item" type="radio" name="modal-form" value="s">
-          </label>
-          <label>
-            <span class="modal-form__name-button">m</span>
-            <input class="modal-form__item" type="radio" name="modal-form" value="m">
-          </label>
-          <label>
-            <span class="modal-form__name-button">l</span>
-            <input class="modal-form__item" type="radio" name="modal-form" value="l">
-          </label>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="about__item about__item--flower">Экологически<br /> чистые материалы</li>
+          <li class="about__item about__item--price">Скандинавский стиль<br /> по российской цене</li>
+          <li class="about__item about__item--like">Увеличивает лайки<br /> на фотографиях</li>
+          <li class="about__item about__item--hand">Связано вручную с<br /> любовью и умилением</li>
+          <li class="about__item about__item--manufacturer">Поддержка отечественного производителя</li>
+          <li class="about__item about__item--present">Поставляется в<br /> подарочной упаковке</li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper container">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__list  slider">
+          <blockquote class="reviews__item  slider__item">
+            <p class="slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше
+              лайков!
+            </p>
+            <cite class="slider__author-name">Анастасия Красильникова</cite>
+            <a class="slider__author-contact" href="#">@misssssiskras</a>
+          </blockquote>
         </div>
-        <button class="modal-form__button button" type="submit">Добавить</button>
-      </form>
+        <div class="slider-controls">
+          <button class="slider-controls__item slider-controls__item--prev" type="button">Предыдущий отзыв</button>
+          <button class="slider-controls__item slider-controls__item--next" type="button">Следующий отзыв</button>
+        </div>
+        <a href="#" class="reviews__button button">Написать</a>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <table class="contacts__list">
+        <tr class="contacts__table-row">
+          <td class="contacts__cell-first">e-mail:</td>
+          <td class="contacts__cell-second">
+            <a class="contacts__mail" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </td>
+        </tr>
+        <tr class="contacts__table-row">
+          <td class="contacts__cell-first">адрес:</td>
+          <td class="contacts__cell-second">г. Санкт-Петербург,<br /> ул. Большая<br /> Конюшенная,<br /> д. 19/8, офис 101</td>
+        </tr>
+      </table>
+      <div class="contacts__map"></div>
+      <a class="contacts__button button" href="#">Напишите нам</a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <a class="page-footer__logo-link">
+        <img class="page-footer__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
-  </body>
+  </footer>
+  <div class="modal-form">
+    <b class="modal-form__title">Добавить в корзину</b>
+    <p class="modal-form__text">Выберете размер</p>
+    <form action="https://echo.htmlacademy.ru">
+      <div class="modal-form__list">
+        <label>
+          <span class="modal-form__name-button">s</span>
+          <input class="modal-form__item" type="radio" name="modal-form" value="s">
+        </label>
+        <label>
+          <span class="modal-form__name-button">m</span>
+          <input class="modal-form__item" type="radio" name="modal-form" value="m">
+        </label>
+        <label>
+          <span class="modal-form__name-button">l</span>
+          <input class="modal-form__item" type="radio" name="modal-form" value="l">
+        </label>
+      </div>
+      <button class="modal-form__button button" type="submit">Добавить</button>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

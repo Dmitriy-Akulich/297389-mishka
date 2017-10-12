@@ -1,81 +1,131 @@
-.goods{
+.goods {
+  position: relative;
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
   border: 1px solid #ededed;
 }
 
-.goods__image{
+.goods__image {
   width: 100%;
 }
 
-.goods__image-link{
+.goods__image-link {
   display: block;
 }
 
-.goods__text-wrapper{
+.goods__text-wrapper {
   padding: 0 28px;
 }
 
-.goods__link{
-  .font(17px, @text-color-black, bold, 24px);
+.goods__title {
+  margin-bottom: 6px;
+}
+
+.goods__link {
+  .font(17px, @text-color-black, bold, 23px);
   text-decoration: none;
 }
 
-.goods__description{
+.goods__description {
+  margin: 0 0 19px;
   .font(13px, @text-color-brown, normal, 30px);
 }
 
-.goods__price{
+.goods__price {
   display: block;
+  padding-top: 21px;
   .font(15px, @text-color-black, bold, 24px);
   border-top: 1px solid #ececec;
 }
 
-@media (min-width: @tablet-width){
-
-  .goods{
+.goods__buy {
+  display: block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  right: 26px;
+  bottom: 30px;
+  background: url("../img/icon-cart.svg") no-repeat 50% 50%;
+}
+@media (min-width: @tablet-width) {
+  .goods {
     display: flex;
+    margin-bottom: 53px;
     padding-bottom: 0;
   }
 
-  .goods__image-wrapper{
+  .goods__image-wrapper {
     width: 50%;
-
+    min-height: 333px;
+    overflow: hidden;
     // временно
     background: #ececec;
   }
 
-  .goods__text-wrapper{
+  .goods__text-wrapper {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .goods__price{
+  .goods__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .goods__title {
+    margin-top: 23px;
+    margin-bottom: 7px;
+    padding-right: 47px;
+  }
+
+  .goods__description {
+    font-size: 15px;
+  }
+
+  .goods__price {
+    margin-bottom: 28px;
     margin-top: auto;
+    padding-left: 3px;
+    font-size: 17px;
+  }
+
+  .goods__buy {
+    right: 31px;
+    bottom: 32px;
   }
 }
-
-@media (min-width: @desktop-width){
-
-  .goods{
+@media (min-width: @desktop-width) {
+  .goods {
     width: 317px;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .goods__text-wrapper{
+  .goods__text-wrapper {
     width: 100%;
     min-height: 197px;
+    padding: 0 25px;
   }
 
-  .goods__image-wrapper{
+  .goods__image-wrapper {
     width: 316px;
     height: 462px;
   }
 
-  .goods__price{
+  .goods__title {
+    margin-top: 22px;
+    padding-right: 23px;
+  }
+
+  .goods__description {
+    margin-bottom: 10px;
+  }
+
+  .goods__price {
     margin-top: auto;
+    margin-bottom: 25px;
+    padding-top: 23px;
   }
 }

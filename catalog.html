@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Мишка. Каталог</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list menu-main">
-          <li class="menu-main__item menu-main__item--logo-width">
-            <div class="menu-main__item-wrapper menu-main__logo-wrapper">
-              <a class="menu-main__logo-link" href="index.html">
-                <img class="menu-main__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
-              </a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--catalog">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--catalog">Каталог товаров</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--knitting">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--knitting" href="form.html">Вязание на заказ</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--search">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--search" href="#">Поиск по сайту</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--basket">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--basket" href="#">Корзина: <span>пока пуста</span></a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--delivery">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--delivery" href="#">Бесплатная доставка по России</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--supply">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--supply" href="#">Новые поступления</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--saley">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--sale" href="#">Распродажа</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-catalog">
-      <div class="page-catalog__title-wrapper">
-        <h1 class="page-catalog__title">Каталог товаров</h1>
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Мишка. Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav container">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list menu-main">
+        <li class="menu-main__item menu-main__item--logo-width">
+          <div class="menu-main__item-wrapper menu-main__logo-wrapper">
+            <a class="menu-main__logo-link" href="index.html">
+              <img class="menu-main__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
+            </a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--catalog">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--catalog">Каталог товаров</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--knitting">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--knitting" href="form.html">Вязание на заказ</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--search">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--search" href="#">Поиск по сайту</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--basket">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--basket" href="#">Корзина: <span>пока пуста</span></a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--delivery">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--delivery" href="#">Бесплатная доставка по России</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--supply">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--supply" href="#">Новые поступления</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--saley">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--sale" href="#">Распродажа</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-catalog">
+    <div class="page-catalog__title-wrapper">
+      <h1 class="page-catalog__title">Каталог товаров</h1>
+    </div>
+    <div class="container">
       <section class="page-catalog__list">
         <article class="page-catalog__item goods">
           <header class="goods__image-wrapper">
@@ -72,8 +75,9 @@
               <a class="goods__link" href="#">Зайчик-попрыгайчик</a>
             </h1>
             <p class="goods__description">Рост 30 см, вес 200 г</p>
-            <b class="goods__price">1200 руб.</b>
+            <b class="goods__price">1 200 руб.</b>
           </div>
+          <a class="goods__buy"></a>
         </article>
         <article class="page-catalog__item goods">
           <header class="goods__image-wrapper">
@@ -88,6 +92,7 @@
             <p class="goods__description">Диаметр 15 см, высота 10 см</p>
             <b class="goods__price">690 руб.</b>
           </div>
+          <a class="goods__buy"></a>
         </article>
         <article class="page-catalog__item goods">
           <header class="goods__image-wrapper">
@@ -100,8 +105,9 @@
               <a class="goods__link" href="#">Большая корзинка для игрушек</a>
             </h1>
             <p class="goods__description">Диаметр 30 см, высота 30 см</p>
-            <b class="goods__price">1500 руб.</b>
+            <b class="goods__price">1 500 руб.</b>
           </div>
+          <a class="goods__buy"></a>
         </article>
       </section>
       <section class="production">
@@ -116,51 +122,54 @@
           <a class="production__button button" href="form.html">Сделать заказ</a>
         </article>
       </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo-link">
-          <img class="page-footer__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </div>
-    </footer>
-    <div class="modal-form">
-      <b class="modal-form__title">Добавить в корзину</b>
-      <p class="modal-form__text">Выберете размер</p>
-      <form action="https://echo.htmlacademy.ru">
-        <div class="modal-form__list">
-          <label>
-            <span class="modal-form__name-button">s</span>
-            <input class="modal-form__item" type="radio" name="modal-form" value="s">
-          </label>
-          <label>
-            <span class="modal-form__name-button">m</span>
-            <input class="modal-form__item" type="radio" name="modal-form" value="m">
-          </label>
-          <label>
-            <span class="modal-form__name-button">l</span>
-            <input class="modal-form__item" type="radio" name="modal-form" value="l">
-          </label>
-        </div>
-        <button class="modal-form__button button" type="submit">Добавить</button>
-      </form>
     </div>
-  </body>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <a class="page-footer__logo-link">
+        <img class="page-footer__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal-form">
+    <b class="modal-form__title">Добавить в корзину</b>
+    <p class="modal-form__text">Выберете размер</p>
+    <form action="https://echo.htmlacademy.ru">
+      <div class="modal-form__list">
+        <label>
+          <span class="modal-form__name-button">s</span>
+          <input class="modal-form__item" type="radio" name="modal-form" value="s">
+        </label>
+        <label>
+          <span class="modal-form__name-button">m</span>
+          <input class="modal-form__item" type="radio" name="modal-form" value="m">
+        </label>
+        <label>
+          <span class="modal-form__name-button">l</span>
+          <input class="modal-form__item" type="radio" name="modal-form" value="l">
+        </label>
+      </div>
+      <button class="modal-form__button button" type="submit">Добавить</button>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
