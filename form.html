@@ -1,179 +1,183 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list menu-main">
-          <li class="menu-main__item menu-main__item--logo-width">
-            <div class="menu-main__item-wrapper menu-main__logo-wrapper">
-              <a class="menu-main__logo-link" href="index.html">
-                <img class="menu-main__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
-              </a>
-            </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav container">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list menu-main">
+        <li class="menu-main__item menu-main__item--logo-width">
+          <div class="menu-main__item-wrapper menu-main__logo-wrapper">
+            <a class="menu-main__logo-link" href="index.html">
+              <img class="menu-main__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
+            </a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--catalog">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--catalog" href="catalog.html">Каталог товаров</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--knitting">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--knitting">Вязание на заказ</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--search">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--search" href="#">Поиск по сайту</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--basket">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--basket" href="#">Корзина: <span>пока пуста</span></a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--delivery">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--delivery" href="#">Бесплатная доставка по России</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--supply">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--supply" href="#">Новые поступления</a>
+          </div>
+        </li>
+        <li class="menu-main__item menu-main__item--saley">
+          <div class="menu-main__item-wrapper">
+            <a class="menu-main__link menu-main__link--sale" href="#">Распродажа</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-form">
+    <div class="page-form__title-wrapper">
+      <h1 class="page-form__title">Вязание на заказ</h1>
+    </div>
+    <div class="page-form__text-wrapper container">
+      <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    </div>
+    <form class="page-form__form form" action="https://echo.htmlacademy.ru">
+      <section class="form__list form-type">
+        <div class="form__list-wrapper container">
+          <h3 class="form__title-block">Тип</h3>
+          <label class="form-type__label">
+            <input class="form-type__input" type="radio" name="type" value="accessory">
+            <span class="form-type__text">Аксессуар для интерьера</span>
+          </label>
+          <label class="form-type__label">
+            <input class="form-type__input" type="radio" name="type" value="toy">
+            <span class="form-type__text">Детская игрушка</span>
+          </label>
+        </div>
+      </section>
+      <section class="form__list form-color">
+        <div class="form__list-wrapper container form-color-wrapper">
+          <h3 class="form__title-block">Цвет</h3>
+          <label class="form-color__label">
+            <input class="form-color__input" type="checkbox" name="white" value="white" checked>
+            <span class="form-color__text">Белый</span>
+          </label>
+          <label class="form-color__label">
+            <input class="form-color__input" type="checkbox" name="gray" value="gray" checked>
+            <span class="form-color__text">Серый</span>
+          </label>
+          <label class="form-color__label">
+            <input class="form-color__input" type="checkbox" name="tiffany" value="tiffany">
+            <span class="form-color__text">&#171;Тиффани&#187;</span>
+          </label>
+          <label class="form-color__label">
+            <input class="form-color__input" type="checkbox" name="black" value="black">
+            <span class="form-color__text">Черный</span>
+          </label>
+          <label class="form-color__label">
+            <input class="form-color__input" type="checkbox" name="pink" value="pink">
+            <span class="form-color__text">Розовый</span>
+          </label>
+          <label class="form-color__label">
+            <input class="form-color__input" type="checkbox" name="orange" value="orange">
+            <span class="form-color__text">Оранжевый</span>
+          </label>
+        </div>
+      </section>
+      <section class="form__list form-user">
+        <div class="form__list-wrapper container">
+          <h3 class="form__title-block form-user__title form__title-block--user">фио</h3>
+          <label class="form-user__label">
+            <span class="form-user__text">Имя:</span>
+            <input class="form-user__input" type="text" name="user-name" placeholder="Введите ваше имя*" autocomplete="on" required>
+          </label>
+          <label class="form-user__label">
+            <span class="form-user__text">Фамилия:</span>
+            <input class="form-user__input" type="text" name="user-surname" placeholder="Укажите фамилию*" autocomplete="on" required>
+          </label>
+          <label class="form-user__label">
+            <span class="form-user__text">Отчество:</span>
+            <input class="form-user__input" type="text" name="user-patronymic" placeholder="Отчество, если желаете" autocomplete="on">
+          </label>
+        </div>
+      </section>
+      <section class="form__list form-tel">
+        <div class="form__list-wrapper container">
+          <h3 class="form__title-block form-tel__title">Тел</h3>
+          <label class="form-tel__label">
+            <input class="form-tel__input" type="tel" name="user-tel" placeholder="+7 xxx xx xx*" pattern="[+]{1}[7]{1}[0-9]{7}" required>
+          </label>
+        </div>
+      </section>
+      <section class="form__list form-mail">
+        <div class="form__list-wrapper container">
+          <h3 class="form__title-block form-mail__title">E-mail</h3>
+          <label class="form-mail__label">
+            <input class="form-mail__input" type="email" name="user-mail" placeholder="Ваш Email*" required>
+          </label>
+        </div>
+      </section>
+      <section class="form__list form-addition">
+        <div class="form__list-wrapper container">
+          <h3 class="form__title-block form-addition__title">Доп</h3>
+          <textarea class="form-addition__input" rows="6" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+      </section>
+      <div class="form__footer-wrapper container">
+        <span class="form__footnote">*&#32;Поля обязательны для заполнения</span>
+        <button class="form__button button" type="submit">Отправить заказ</button>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+      <a class="page-footer__logo-link">
+        <img class="page-footer__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
           </li>
-          <li class="menu-main__item menu-main__item--catalog">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--catalog" href="catalog.html">Каталог товаров</a>
-            </div>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
-          <li class="menu-main__item menu-main__item--knitting">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--knitting">Вязание на заказ</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--search">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--search" href="#">Поиск по сайту</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--basket">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--basket" href="#">Корзина: <span>пока пуста</span></a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--delivery">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--delivery" href="#">Бесплатная доставка по России</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--supply">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--supply" href="#">Новые поступления</a>
-            </div>
-          </li>
-          <li class="menu-main__item menu-main__item--saley">
-            <div class="menu-main__item-wrapper">
-              <a class="menu-main__link menu-main__link--sale" href="#">Распродажа</a>
-            </div>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
           </li>
         </ul>
-      </nav>
-    </header>
-    <main class="page-form">
-      <div class="page-form__title-wrapper">
-          <h1 class="page-form__title">Вязание на заказ</h1>
       </div>
-      <div class="page-form__text-wrapper">
-        <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
-      <form class="page-form__form form" action="https://echo.htmlacademy.ru">
-        <section class="form__list form-type">
-          <div class="form__list-wrapper">
-            <h3 class="form__title-block">Тип</h3>
-            <label class="form-type__label">
-              <input class="form-type__input" type="radio" name="type" value="accessory">
-              <span class="form-type__text">Аксессуар для интерьера</span>
-            </label>
-            <label class="form-type__label">
-              <input class="form-type__input" type="radio" name="type" value="toy">
-              <span class="form-type__text">Детсткая игрушка</span>
-            </label>
-          </div>
-        </section>
-        <section class="form__list form-color">
-          <div class="form__list-wrapper form-color-wrapper">
-            <h3 class="form__title-block">Цвет</h3>
-            <label class="form-color__label">
-              <input class="form-color__input" type="checkbox" name="white" value="white" checked>
-              <span class="form-color__text">Белый</span>
-            </label>
-            <label class="form-color__label">
-              <input class="form-color__input" type="checkbox" name="gray" value="gray" checked>
-              <span class="form-color__text">Серый</span>
-            </label>
-            <label class="form-color__label">
-              <input class="form-color__input" type="checkbox" name="tiffany" value="tiffany">
-              <span class="form-color__text">&#171;Тиффани&#187;</span>
-            </label>
-            <label class="form-color__label">
-              <input class="form-color__input" type="checkbox" name="black" value="black">
-              <span class="form-color__text">Черный</span>
-            </label>
-            <label class="form-color__label">
-              <input class="form-color__input" type="checkbox" name="pink" value="pink">
-              <span class="form-color__text">Розовый</span>
-            </label>
-            <label class="form-color__label">
-              <input class="form-color__input" type="checkbox" name="orange" value="orange">
-              <span class="form-color__text">Оранжевый</span>
-            </label>
-          </div>
-        </section>
-        <section class="form__list form-user">
-          <div class="form__list-wrapper">
-            <h3 class="form__title-block">фио</h3>
-            <label class="form-user__label">
-              <span class="form-user__text">Имя:</span>
-              <input class="form-user__input" type="text" name="user-name" placeholder="Введите ваше имя*" autocomplete="on" required>
-            </label>
-            <label class="form-user__label">
-              <span class="form-user__text">Фамилия:</span>
-              <input class="form-user__input" type="text" name="user-surname" placeholder="Укажите фамилию*" autocomplete="on" required>
-            </label>
-            <label class="form-user__label">
-              <span class="form-user__text">Отчество:</span>
-              <input class="form-user__input" type="text" name="user-patronymic" placeholder="Отчество, если желаете" autocomplete="on">
-            </label>
-          </div>
-        </section>
-        <section class="form__list form-tel">
-          <div class="form__list-wrapper">
-            <h3 class="form__title-block">Тел</h3>
-            <label class="form-tel__label">
-              <input class="form-tel__input" type="tel" name="user-tel" placeholder="+7 xxx xx xx*" pattern="[+]{1}[7]{1}[0-9]{7}" required>
-            </label>
-          </div>
-        </section>
-        <section class="form__list form-mail">
-          <div class="form__list-wrapper">
-            <h3 class="form__title-block">E-mail</h3>
-            <label class="form-mail__label">
-              <input class="form-mail__input" type="email" name="user-mail" placeholder="Ваш Email*" required>
-            </label>
-          </div>
-        </section>
-        <section class="form__list form-addition">
-          <div class="form__list-wrapper">
-            <h3 class="form__title-block">Доп</h3>
-            <textarea class="form-addition__input" rows="5" name="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </div>
-        </section>
-        <div class="form__footer-wrapper">
-          <span class="form__footnote">*  Поля обязательны для заполнения</span>
-          <button class="form__button button" type="submit">Отправить заказ</button>
-        </div>
-      </form>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo-link">
-          <img class="page-footer__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

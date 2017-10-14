@@ -1,24 +1,79 @@
-.main-nav__toggle{
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
   position: absolute;
   right: 30px;
   top: 30px;
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 10;
 }
 
-@media (min-width: @tablet-width){
-  .main-nav{
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 50px;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 20px;
+  height: 2px;
+  background-color: #221f1f;
+  box-shadow: 0 6px 0 0 #221f1f, 0 12px 0 0 #221f1f;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #221f1f;
   }
-  .main-nav__toggle{
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
     display: none;
   }
 }
+@media (max-width: @mobile-width-only) {
+  .main-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-@media (min-width: @desktop-width){
-  .main-nav{
-    width: 1150px;
-    margin: 0 auto;
-    padding: 0 50px;
+  .main-nav--closed .menu-main__item:nth-of-type(n+2) {
+    display: none;
+  }
+
+  .main-nav--opened .menu-main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+  }
+
+  .main-nav--opened::before {
+    content: "";
+    display: block;
+    min-height: 79px;
   }
 }

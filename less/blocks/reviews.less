@@ -1,104 +1,92 @@
-.reviews{
-  padding: 60px 0 20px;
+.reviews {
+  padding: 40px 0 20px;
 }
 
-.reviews__wrapper{
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-.reviews__title{
+.reviews__title {
   margin-top: 0;
   margin-bottom: 25px;
   .font-title-section;
 }
 
-.reviews__button{
+.reviews__button {
   width: 100%;
   margin-bottom: 35px;
-  margin-top: 35px;
+  margin-top: 37px;
   text-decoration: none;
   text-align: center;
-  line-height: 52px;
+  line-height: 48px;
   vertical-align: middle;
 }
+@media (min-width: @tablet-width) {
+  .reviews {
+    padding: 72px 0 110px;
+  }
 
-@media (min-width: @tablet-width){
-
-  .reviews__wrapper{
+  .reviews__wrapper {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 768px;
-    padding: 0 50px;
-    padding-top: 80px;
+    padding: 80px 50px 0;
   }
 
-  .reviews__wrapper::before{
+  .reviews__wrapper::before {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 3px;
     left: 0;
     z-index: -1;
     width: 350px;
     height: 457px;
-    background: #f3f3f3 url(../img/review@1x.jpg) no-repeat;
+    background: #f3f3f3 url("../img/review@1x.jpg") no-repeat;
     background-size: 350px 457px;
   }
 
-  .reviews__title{
+  .reviews__title {
     order: -2;
     margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
-  .reviews__author-name{
+  .reviews__author-name {
     font-size: 18px;
   }
 
-  .slider-controls{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
-  .reviews__button{
+  .reviews__button {
     order: -1;
     width: 175px;
     margin: 0;
   }
-
 }
-
-@media (min-width: @desktop-width){
-
+@media (min-width: @desktop-width) {
   .reviews {
-    padding: 150px 0;
-}
+    padding: 150px 0 158px;
+  }
 
-  .reviews__wrapper{
-    width: 1150px;
+  .reviews__wrapper {
     padding: 0 50px 0 225px;
   }
 
-  .reviews__title{
+  .reviews__title {
     font-size: 53px;
     line-height: 57px;
   }
 
-  .reviews__wrapper::before{
+  .reviews__wrapper::before {
     content: "";
     position: absolute;
-    top: -65px;
-    left: 55px;
+    top: -70px;
+    left: 50px;
     z-index: -1;
     width: 350px;
     height: 457px;
-    background: #f3f3f3 url(../img/review@1x.jpg) no-repeat;
+    background: #f3f3f3 url("../img/review@1x.jpg") no-repeat;
     background-size: 350px 457px;
+  }
+
+  .reviews__button {
+    margin-top: 10px;
   }
 }
