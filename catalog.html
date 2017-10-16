@@ -16,13 +16,17 @@
         <li class="menu-main__item menu-main__item--logo-width">
           <div class="menu-main__item-wrapper menu-main__logo-wrapper">
             <a class="menu-main__logo-link" href="index.html">
-              <img class="menu-main__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Mishka" title="Mishka" width="90" height="40">
+              </picture>
             </a>
           </div>
         </li>
         <li class="menu-main__item menu-main__item--catalog">
           <div class="menu-main__item-wrapper">
-            <a class="menu-main__link menu-main__link--catalog">Каталог товаров</a>
+            <a class="menu-main__link menu-main__link--catalog menu-main__link--active">Каталог товаров</a>
           </div>
         </li>
         <li class="menu-main__item menu-main__item--knitting">
@@ -67,7 +71,11 @@
         <article class="page-catalog__item goods">
           <header class="goods__image-wrapper">
             <a class="goods__image-link" href="#">
-              <img class="goods__image" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="goods__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Вязаный зайчик" title="Вязаный зайчик">
+              </picture>
             </a>
           </header>
           <div class="goods__text-wrapper">
@@ -82,7 +90,11 @@
         <article class="page-catalog__item goods">
           <header class="goods__image-wrapper">
             <a class="goods__image-link" href="#">
-              <img class="goods__image" src="http://placehold.it/260x195" alt="Корзинка для белья">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="goods__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья" title="Корзинка для белья">
+              </picture>
             </a>
           </header>
           <div class="goods__text-wrapper">
@@ -97,7 +109,11 @@
         <article class="page-catalog__item goods">
           <header class="goods__image-wrapper">
             <a class="goods__image-link" href="#">
-              <img class="goods__image" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="goods__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек" title="Большая корзинка для игрушек">
+              </picture>
             </a>
           </header>
           <div class="goods__text-wrapper">
@@ -107,14 +123,14 @@
             <p class="goods__description">Диаметр 30 см, высота 30 см</p>
             <b class="goods__price">1 500 руб.</b>
           </div>
-          <a class="goods__buy"></a>
+          <a class="goods__buy">Купить</a>
         </article>
       </section>
       <section class="production">
         <article class="production__article">
           <h1 class="production__title">Процесс производства</h1>
           <div class="production__video-wrapper">
-            <video class="production__video" poster="http://placehold.it/260x150">
+            <video class="production__video" preload="none">
               <source src="video/#.ogv" type="video/ogg">
             </video>
           </div>
@@ -149,27 +165,30 @@
     </div>
   </footer>
   <div class="modal-form">
-    <b class="modal-form__title">Добавить в корзину</b>
-    <p class="modal-form__text">Выберете размер</p>
-    <form action="https://echo.htmlacademy.ru">
-      <div class="modal-form__list">
-        <label>
-          <span class="modal-form__name-button">s</span>
-          <input class="modal-form__item" type="radio" name="modal-form" value="s">
-        </label>
-        <label>
-          <span class="modal-form__name-button">m</span>
-          <input class="modal-form__item" type="radio" name="modal-form" value="m">
-        </label>
-        <label>
-          <span class="modal-form__name-button">l</span>
-          <input class="modal-form__item" type="radio" name="modal-form" value="l">
-        </label>
-      </div>
-      <button class="modal-form__button button" type="submit">Добавить</button>
-    </form>
+    <div class="modal-form-wrapper">
+      <b class="modal-form__title">Добавить в корзину</b>
+      <p class="modal-form__text">Выберите размер:</p>
+      <form class="modal-form__form" action="https://echo.htmlacademy.ru">
+        <div class="modal-form__list">
+          <label class="modal-form__label">
+            <input class="modal-form__item" type="radio" name="modal-form" value="s" checked>
+            <span class="modal-form__name-button">s</span>
+          </label>
+          <label class="modal-form__label">
+            <input class="modal-form__item" type="radio" name="modal-form" value="m">
+            <span class="modal-form__name-button">m</span>
+          </label>
+          <label class="modal-form__label">
+            <input class="modal-form__item" type="radio" name="modal-form" value="l">
+            <span class="modal-form__name-button">l</span>
+          </label>
+        </div>
+        <button class="modal-form__button button" type="submit">Добавить</button>
+      </form>
+    </div>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>

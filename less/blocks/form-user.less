@@ -9,12 +9,21 @@
   border: none;
   border-bottom: 2px solid @text-color-brown;
   outline: none;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 }
 
 .form-user__label {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  &:active .form-user__input,
+  &:hover .form-user__input {
+    border-color: #62d1ba;
+  }
 }
 @media (min-width: @tablet-width) {
   .form-user {

@@ -7,6 +7,16 @@
   .font(17px, @text-color-brown, normal, 18px);
   border: 2px solid @text-color-brown;
   width: 100%;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.form-addition__input:active,
+.form-addition__input:hover {
+  border-color: #62d1ba;
+  outline: none;
 }
 
 .form-addition__title {
@@ -21,7 +31,7 @@
     margin-bottom: 49px;
   }
 }
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .form-addition__title {
     left: 112px;
     top: 15px;

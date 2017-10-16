@@ -13,6 +13,14 @@
 .form-color__label {
   display: block;
   margin-bottom: 33px;
+
+  &:hover .form-color__text::after {
+    border-color: #62d1ba;
+  }
+
+  &:active .form-color__text::after {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .form-color__text::after {
