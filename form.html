@@ -16,7 +16,11 @@
         <li class="menu-main__item menu-main__item--logo-width">
           <div class="menu-main__item-wrapper menu-main__logo-wrapper">
             <a class="menu-main__logo-link" href="index.html">
-              <img class="menu-main__logo-image" src="../img/logo-mobile.svg" width="90" height="40" alt="Мишка">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Mishka" title="Mishka" width="90" height="40">
+              </picture>
             </a>
           </div>
         </li>
@@ -27,7 +31,7 @@
         </li>
         <li class="menu-main__item menu-main__item--knitting">
           <div class="menu-main__item-wrapper">
-            <a class="menu-main__link menu-main__link--knitting">Вязание на заказ</a>
+            <a class="menu-main__link menu-main__link--knitting menu-main__link--active">Вязание на заказ</a>
           </div>
         </li>
         <li class="menu-main__item menu-main__item--search">
@@ -70,7 +74,7 @@
         <div class="form__list-wrapper container">
           <h3 class="form__title-block">Тип</h3>
           <label class="form-type__label">
-            <input class="form-type__input" type="radio" name="type" value="accessory">
+            <input class="form-type__input" type="radio" name="type" value="accessory" checked>
             <span class="form-type__text">Аксессуар для интерьера</span>
           </label>
           <label class="form-type__label">

@@ -2,6 +2,11 @@
   margin-bottom: 30px;
 }
 
+.form-mail__label:active .form-mail__input,
+.form-mail__label:hover .form-mail__input {
+  border-color: #62d1ba;
+}
+
 .form-mail__input {
   width: 100%;
   padding: 15px 0;
@@ -9,6 +14,10 @@
   border: none;
   border-bottom: 2px solid @text-color-brown;
   outline: none;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 }
 
 .form-mail__title {

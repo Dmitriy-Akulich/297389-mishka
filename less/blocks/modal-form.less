@@ -1,0 +1,116 @@
+.modal-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 99;
+}
+
+.modal-form--none {
+  display: none;
+}
+
+.modal-form--open {
+  display: block;
+}
+
+.modal-form-wrapper {
+  position: fixed;
+  top: 30vh;
+  transform: translate(-50%);
+  left: 50%;
+  min-width: 320px;
+  height: 337px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #ffffff;
+  border-top: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.25);
+  z-index: 100;
+}
+
+.modal-form__title {
+  display: block;
+  width: 150px;
+  margin: 40px auto 20px;
+  .font(25px, #000000, bold, 30px);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-form__text {
+  margin-bottom: 30px;
+  .font(15px, @text-color-light-black, normal, 30px);
+  text-align: center;
+}
+
+.modal-form__item {
+  display: none;
+}
+
+.modal-form__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.modal-form__label {
+  width: 30%;
+  text-align: center;
+}
+
+.modal-form__name-button {
+  display: block;
+  padding: 15px 20px;
+  .font(17px, @text-color-brown, bold, 16px);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #ececec;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+}
+
+.modal-form__item:checked ~ .modal-form__name-button {
+  border-color: #63d1bb;
+}
+
+.modal-form__button {
+  width: 260px;
+  .font(17px, #ffffff, bold, 52px);
+  text-align: center;
+  background-color: #63d1bb;
+  border: 0;
+
+  &:hover {
+    background-color: #56c3b2;
+  }
+}
+@media (min-width: @tablet-width) {
+  .modal-form-wrapper {
+    min-width: 568px;
+    height: 340px;
+    padding-left: 108px;
+    padding-right: 108px;
+    border: 1px solid #c7c7c7;
+  }
+
+  .modal-form__title {
+    width: 100%;
+    font-size: 29px;
+    line-height: 40px;
+  }
+
+  .modal-form__text {
+    font-size: 17px;
+  }
+
+  .modal-form__button {
+    width: 100%;
+  }
+}
