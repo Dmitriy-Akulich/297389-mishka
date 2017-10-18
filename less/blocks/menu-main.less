@@ -127,6 +127,7 @@
 
   .menu-main__item--logo-width {
     min-width: 320px;
+    padding-top: 5px;
   }
 
   .menu-main__item--search {
@@ -193,6 +194,16 @@
   }
 }
 @media (min-width: @desktop-width) {
+  .menu-main__logo-link[href] {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   .menu-main__item--saley,
   .menu-main__item--supply {
     width: auto;

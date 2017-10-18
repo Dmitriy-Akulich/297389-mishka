@@ -3,8 +3,10 @@
 }
 
 .form-mail__label:active .form-mail__input,
+.form-mail__label:focus .form-tel__input,
 .form-mail__label:hover .form-mail__input {
   border-color: #62d1ba;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%2362d1ba%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M28%205H4a4%204%200%200%200-4%204v13a4%204%200%200%200%204%204h24a4%204%200%200%200%204-4V9a4%204%200%200%200-4-4zM2%2010.25l6.999%205.25L2%2020.75v-10.5zM30%2022c0%201.104-.898%202-2%202H4c-1.103%200-2-.896-2-2l7.832-5.875%204.368%203.277a3%203%200%200%200%203.599%200l4.369-3.277L30%2022zm0-1.25l-7-5.25%207-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665%2015.5l-.833-.625L2%209.001V9c0-1.103.897-2%202-2h24c1.102%200%202%20.897%202%202l-12.801%209.602z%22%2F%3E%3C%2Fsvg%3E");
 }
 
 .form-mail__input {
@@ -14,6 +16,9 @@
   border: none;
   border-bottom: 2px solid @text-color-brown;
   outline: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23cccccc%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M28%205H4a4%204%200%200%200-4%204v13a4%204%200%200%200%204%204h24a4%204%200%200%200%204-4V9a4%204%200%200%200-4-4zM2%2010.25l6.999%205.25L2%2020.75v-10.5zM30%2022c0%201.104-.898%202-2%202H4c-1.103%200-2-.896-2-2l7.832-5.875%204.368%203.277a3%203%200%200%200%203.599%200l4.369-3.277L30%2022zm0-1.25l-7-5.25%207-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665%2015.5l-.833-.625L2%209.001V9c0-1.103.897-2%202-2h24c1.102%200%202%20.897%202%202l-12.801%209.602z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: 223px center;
 
   &::placeholder {
     opacity: 0.3;
@@ -34,10 +39,15 @@
     padding-left: 17px;
     font-size: 19px;
     background-color: #f1f1f1;
+    background-position: 447px 10px;
   }
 }
 @media (min-width: @tablet-width) {
   .form-mail__title {
     top: 17px;
+  }
+
+  .form-mail__input {
+    background-position: 667px 10px;
   }
 }
