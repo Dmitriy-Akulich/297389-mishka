@@ -3,8 +3,8 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var buttonOpenForm = document.querySelector('.product__button');
 var formSection = document.querySelector('.modal-form');
 var form = document.querySelector('.modal-form__form');
-var formOpen = document.querySelector('.modal-form--open');
-var goodsBuy = document.querySelector('.goods__buy');
+var formOpen = document.getElementById('open-form');
+// var goodsBuy = document.querySelector('.goods__buy');
 
 navMain.classList.add('main-nav--closed');
 
@@ -18,12 +18,16 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-buttonOpenForm.addEventListener('click', openForm);
+buttonOpenForm.addEventListener('click', function(openForm) {
 
-function openForm(e) {
-  e.preventDefault();
+  openForm.preventDefault();
   formSection.classList.toggle('modal-form--open');
-}
+});
+
+// goodsBuy.addEventListener('click', function(openFormKatalog) {
+//   openFormKatalog.preventDefault();
+//   formSection.classList.toggle('modal-form--open');
+// });
 
 form.onsubmit = function(event) {
   event.preventDefault();
@@ -32,11 +36,4 @@ form.onsubmit = function(event) {
   formSection.classList.add('modal-form--none');
 
   alert("Спасибо, Ваша заявка принята!");
-}
-
-goodsBuy.addEventListener('click', openForm2);
-
-function openForm2(o) {
-  o.preventDefault();
-  formSection.classList.toggle('modal-form--open');
 };
