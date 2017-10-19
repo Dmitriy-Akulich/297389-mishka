@@ -1,0 +1,74 @@
+.page-form__title-wrapper {
+  background-color: @background-color;
+}
+
+.page-form__title {
+  width: 260px;
+  padding: 73px 0;
+  margin: 0 auto;
+  .font(27px, @text-color-light-black, bold, 30px);
+  text-align: center;
+}
+
+.page-form__text-wrapper {
+  padding: 23px 0;
+}
+
+.page-form__text {
+  margin: 0;
+  .font(13px, @text-color-brown, normal, 24px);
+}
+@media (min-width: @tablet-width) {
+  .page-form__title-wrapper {
+    position: relative;
+    margin-top: -63px;
+    border-top: 1px solid #ececec;
+  }
+
+  .page-form__title-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    z-index: 2;
+    width: 100%;
+    height: 24px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221150%22%20height%3D%2234%22%20viewBox%3D%220%200%201150%2034%22%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M1121.252%200c-14.375%200-14.375%2014-28.749%2014s-14.374-14-28.748-14-14.374%2014-28.748%2014c-14.375%200-14.375-14-28.75-14-14.374%200-14.374%2014-28.748%2014S963.135%200%20948.761%200s-14.374%2014-28.749%2014-14.375-14-28.749-14-14.374%2014-28.749%2014-14.375-14-28.75-14c-14.371%200-14.371%2014-28.743%2014-14.375%200-14.375-14-28.75-14-14.372%200-14.372%2014-28.744%2014-14.374%200-14.374-14-28.747-14s-14.373%2014-28.747%2014C675.66%2014%20675.66%200%20661.287%200c-14.374%200-14.374%2014-28.748%2014-14.375%200-14.375-14-28.751-14-14.374%200-14.374%2014-28.748%2014S560.666%200%20546.292%200s-14.374%2014-28.748%2014S503.17%200%20488.796%200c-14.375%200-14.375%2014-28.75%2014-14.376%200-14.376-14-28.753-14-14.375%200-14.375%2014-28.75%2014S388.168%200%20373.792%200c-14.375%200-14.375%2014-28.75%2014S330.666%200%20316.291%200s-14.375%2014-28.751%2014c-14.376%200-14.376-14-28.753-14-14.374%200-14.374%2014-28.747%2014-14.375%200-14.375-14-28.75-14s-14.375%2014-28.751%2014c-14.377%200-14.377-14-28.754-14s-14.377%2014-28.755%2014c-14.378%200-14.378-14-28.756-14S71.896%2014%2057.518%2014C43.139%2014%2043.139%200%2028.759%200S14.38%2014%200%2014v20h1150V14c-14.374%200-14.374-14-28.748-14z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: repeat-x;
+    background-size: 775px 25px;
+  }
+
+  .page-form__title {
+    width: 668px;
+    padding-top: 93px;
+    padding-bottom: 81px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-form__text-wrapper {
+    padding: 73px 0 40px;
+  }
+
+  .page-form__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-form__title {
+    width: 1050px;
+    padding-bottom: 102px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-form__text-wrapper {
+    padding: 123px 175px 50px;
+  }
+
+  .page-form__title-wrapper::after {
+    bottom: -18px;
+    height: 34px;
+    background-size: 1150px 34px;
+  }
+}
