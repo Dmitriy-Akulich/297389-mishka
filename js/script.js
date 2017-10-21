@@ -1,6 +1,6 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var openPopap = document.querySelectorAll('.open-popap');
+var openPopap = document.querySelector('.open-popap');
 var formSection = document.querySelector('.modal-form');
 var form = document.querySelector('.modal-form__form');
 var formOpen = document.getElementById('open-form');

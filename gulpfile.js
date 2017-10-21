@@ -74,6 +74,7 @@ gulp.task("serve", function() {
 
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html", ["html"]);
+  gulp.watch("js/script.js", ["minifyjs"]);
 });
 
 gulp.task("build", function(done) {
@@ -104,7 +105,9 @@ gulp.task("clean", function() {
 
 gulp.task('minifyjs', function() {
   gulp.src("js/script.js")
+    .pipe(plumber())
     .pipe(uglify())
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/js'))
+    .pipe(server.stream());
 });
