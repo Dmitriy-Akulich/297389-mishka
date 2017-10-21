@@ -56,7 +56,7 @@
         </li>
         <li class="menu-main__item menu-main__item--basket">
           <div class="menu-main__item-wrapper menu-main__item-wrapper--basket">
-            <a class="menu-main__link menu-main__link--basket" href="#">Корзина: <span>пока пуста</span></a>
+            <a class="menu-main__link menu-main__link--basket" href="basket.html">Корзина: <span>пока пуста</span></a>
           </div>
         </li>
         <li class="menu-main__item menu-main__item--delivery">
@@ -85,7 +85,7 @@
       <section class="page-catalog__list">
         <article class="page-catalog__item goods">
           <header class="goods__image-wrapper">
-            <a class="goods__image-link" href="#">
+            <a class="goods__image-link" href="hare.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@1x.webp 2x">
@@ -98,16 +98,16 @@
           </header>
           <div class="goods__text-wrapper">
             <h1 class="goods__title">
-              <a class="goods__link" href="#">Зайчик-попрыгайчик</a>
+              <a class="goods__link" href="hare.html">Зайчик-попрыгайчик</a>
             </h1>
             <p class="goods__description">Рост 30 см, вес 200 г</p>
             <b class="goods__price">1 200 руб.</b>
           </div>
-          <a class="goods__buy open-popap">Купить</a>
+          <a class="goods__buy open-popap" href="sale.html">Купить</a>
         </article>
         <article class="page-catalog__item goods">
           <header class="goods__image-wrapper">
-            <a class="goods__image-link" href="#">
+            <a class="goods__image-link" href="bowl.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
@@ -120,16 +120,16 @@
           </header>
           <div class="goods__text-wrapper">
             <h1 class="goods__title">
-              <a class="goods__link" href="#">Корзинка для белья</a>
+              <a class="goods__link" href="bowl.html">Корзинка для белья</a>
             </h1>
             <p class="goods__description">Диаметр 15 см, высота 10 см</p>
             <b class="goods__price">690 руб.</b>
           </div>
-          <a class="goods__buy open-popap">Купить</a>
+          <a class="goods__buy open-popap" href="sale.html">Купить</a>
         </article>
         <article class="page-catalog__item goods">
           <header class="goods__image-wrapper">
-            <a class="goods__image-link" href="#">
+            <a class="goods__image-link" href="big_bowl.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
@@ -142,18 +142,18 @@
           </header>
           <div class="goods__text-wrapper">
             <h1 class="goods__title">
-              <a class="goods__link" href="#">Большая корзинка для игрушек</a>
+              <a class="goods__link" href="big_bowl.html">Большая корзинка для игрушек</a>
             </h1>
             <p class="goods__description">Диаметр 30 см, высота 30 см</p>
             <b class="goods__price">1 500 руб.</b>
           </div>
-          <a class="goods__buy open-popap">Купить</a>
+          <a class="goods__buy open-popap" href="sale.html">Купить</a>
         </article>
       </section>
       <section class="production">
         <article class="production__article">
           <h1 class="production__title">Процесс производства</h1>
-          <div class="production__video-wrapper">
+          <div class="production__video-wrapper video">
             <video class="production__video" preload="none">
               <source src="video/#.ogv" type="video/ogg">
             </video>
@@ -169,7 +169,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo-link" href="#">
+      <a class="page-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg width="102" height="34">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#img_page-footer_logo"></use>
         </svg>
@@ -200,7 +200,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__text" href="//htmlacademy.ru">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
           <span class="copyright__logo">HTML Academy</span>
         </a>
@@ -208,21 +208,21 @@
     </div>
   </footer>
   <div class="modal-form">
-    <div class="modal-form-wrapper">
+    <div class="modal-form__wrapper">
       <b class="modal-form__title">Добавить в корзину</b>
       <p class="modal-form__text">Выберите размер:</p>
       <form class="modal-form__form" action="https://echo.htmlacademy.ru">
         <div class="modal-form__list">
           <label class="modal-form__label">
-            <input class="modal-form__item" type="radio" name="modal-form" value="s" checked>
+            <input class="modal-form__item" type="radio" name="size" value="s" checked>
             <span class="modal-form__name-button">s</span>
           </label>
           <label class="modal-form__label">
-            <input class="modal-form__item" type="radio" name="modal-form" value="m">
+            <input class="modal-form__item" type="radio" name="size" value="m">
             <span class="modal-form__name-button">m</span>
           </label>
           <label class="modal-form__label">
-            <input class="modal-form__item" type="radio" name="modal-form" value="l">
+            <input class="modal-form__item" type="radio" name="size" value="l">
             <span class="modal-form__name-button">l</span>
           </label>
         </div>

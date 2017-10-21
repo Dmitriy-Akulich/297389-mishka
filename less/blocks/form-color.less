@@ -6,10 +6,6 @@
   cursor: pointer;
 }
 
-.form-color__input {
-  display: none;
-}
-
 .form-color__label {
   display: block;
   margin-bottom: 33px;
@@ -21,6 +17,23 @@
   &:active .form-color__text::after {
     border-color: rgba(68, 68, 68, 0.3);
   }
+}
+
+.form-color__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-color__input:focus ~ .form-color__text::after {
+  border-color: #62d1ba;
 }
 
 .form-color__text::after {

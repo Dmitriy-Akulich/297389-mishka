@@ -4,7 +4,6 @@ var openPopap = document.querySelectorAll('.open-popap');
 var formSection = document.querySelector('.modal-form');
 var form = document.querySelector('.modal-form__form');
 var formOpen = document.getElementById('open-form');
-// var goodsBuy = document.querySelector('.goods__buy');
 
 navMain.classList.add('main-nav--closed');
 

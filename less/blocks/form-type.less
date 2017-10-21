@@ -6,10 +6,6 @@
   cursor: pointer;
 }
 
-.form-type__input {
-  display: none;
-}
-
 .form-type__label {
   display: block;
   margin-bottom: 13px;
@@ -21,6 +17,23 @@
   &:active .form-type__text::after {
     border-color: rgba(68, 68, 68, 0.3);
   }
+}
+
+.form-type__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-type__input:focus ~ .form-type__text::after {
+  border-color: #62d1ba;
 }
 
 .form-type__text::after {

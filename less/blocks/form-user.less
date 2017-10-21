@@ -14,6 +14,10 @@
   border-bottom: 2px solid @text-color-brown;
   outline: none;
 
+  &:focus {
+    border-color: #62d1ba;
+  }
+
   &::placeholder {
     opacity: 0.3;
   }
@@ -25,6 +29,7 @@
   margin-bottom: 21px;
 
   &:active .form-user__input,
+  &:focus .form-user__input,
   &:hover .form-user__input {
     border-color: #62d1ba;
   }
