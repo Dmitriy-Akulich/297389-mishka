@@ -1,6 +1,6 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var openPopap = document.querySelector('.open-popap');
+var openPopap = document.querySelectorAll('.open-popap');
 var formSection = document.querySelector('.modal-form');
 var form = document.querySelector('.modal-form__form');
 var formOpen = document.getElementById('open-form');
@@ -18,16 +18,14 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-openPopap.addEventListener('click', function(openForm) {
 
-  openForm.preventDefault();
-  formSection.classList.toggle('modal-form--open');
+[].forEach.call(openPopap, function(popap) {
+  popap.addEventListener('click', function(openForm) {
+    openForm.preventDefault();
+    formSection.classList.toggle('modal-form--open');
+  });
 });
 
-// goodsBuy.addEventListener('click', function(openFormKatalog) {
-//   openFormKatalog.preventDefault();
-//   formSection.classList.toggle('modal-form--open');
-// });
 
 form.onsubmit = function(event) {
   event.preventDefault();
@@ -36,4 +34,6 @@ form.onsubmit = function(event) {
   formSection.classList.add('modal-form--none');
 
   alert("Спасибо, Ваша заявка принята!");
+
+  form.submit();
 };
